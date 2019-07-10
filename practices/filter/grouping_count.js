@@ -4,12 +4,8 @@ function grouping_count(collection) {
 
   //implement here
   const group = {};
-  collection.forEach(value => {
-    if (group[value] == undefined) {
-      group[value] = 1;
-    } else {
-      group[value]++;
-    }
+  collection.filter((value) => {
+    return group[value] == undefined ? group[value] = 1 : group[value]++;
   })
   return group;
 }
