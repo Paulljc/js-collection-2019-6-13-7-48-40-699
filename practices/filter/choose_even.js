@@ -4,7 +4,10 @@ function choose_even(collection) {
   //implement here
   const result = [];
   collection.forEach(element => {
-    if(element % 2 === 0){
+    const condition = () => {
+      return element % 2 === 0;
+    }
+    if(condition()){
       result.push(element)
     }
   });

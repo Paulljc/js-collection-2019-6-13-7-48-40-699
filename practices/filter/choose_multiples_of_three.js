@@ -5,7 +5,10 @@ function choose_multiples_of_three(collection) {
   //implement here
   const result = [];
   collection.forEach(element => {
-    if(element % 3 === 0){
+    const condition = () => {
+      return element % 3 === 0;
+    }
+    if(condition()){
       result.push(element)
     }
   });

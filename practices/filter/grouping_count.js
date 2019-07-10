@@ -3,15 +3,15 @@
 function grouping_count(collection) {
 
   //implement here
-  const item = {};
+  const group = {};
   collection.forEach(value => {
-    if (item[value] == undefined) {
-      item[value] = 1;
+    if (group[value] == undefined) {
+      group[value] = 1;
     } else {
-      item[value]++;
+      group[value]++;
     }
   })
-  return item;
+  return group;
 }
 
 module.exports = grouping_count;
