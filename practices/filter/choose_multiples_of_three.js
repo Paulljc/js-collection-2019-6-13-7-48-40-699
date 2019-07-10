@@ -3,15 +3,9 @@
 function choose_multiples_of_three(collection) {
 
   //implement here
-  const result = [];
-  collection.forEach(element => {
-    const condition = () => {
-      return element % 3 === 0;
-    }
-    if(condition()){
-      result.push(element)
-    }
-  });
+  const result = collection.filter((value) => {
+    return value % 3 === 0 ? true : false;
+  })
   return result;
 }
 

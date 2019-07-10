@@ -2,15 +2,9 @@
 
 function choose_even(collection) {
   //implement here
-  const result = [];
-  collection.forEach(element => {
-    const condition = () => {
-      return element % 2 === 0;
-    }
-    if(condition()){
-      result.push(element)
-    }
-  });
+  const result = collection.filter((value) => {
+    return value % 2 === 0 ? true : false;
+  })
   return result;
 }
 
